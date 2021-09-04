@@ -1,0 +1,61 @@
+.heightcontainer {
+  height: 90vh;
+}
+
+.gameBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  border: 1px solid white;
+  padding: 2rem;
+  margin-top: 1rem;
+}
+
+.smallbox {
+  padding: 1rem;
+  background-color: cadetblue;
+  font-size: 1.5rem;
+  border-radius: 4px;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.gamecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background-color: tomato;
+}
+.invisible {
+  visibility: none;
+}
+.child h1 {
+  visibility: none;
+}
+
+@media (max-width: 630px) {
+  .gamecontainer {
+    flex-direction: column;
+  }
+  .heightcontainer {
+    height: auto;
+  }
+  .button {
+    display: flex;
+  }
+}
+@media (max-width: 478px) {
+  .smallbox {
+    height: 3.2rem;
+    width: 3.2rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

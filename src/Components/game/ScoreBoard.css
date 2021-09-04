@@ -1,0 +1,84 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button button {
+  padding: 1rem 2rem;
+  outline: none;
+  background-color: rgb(90, 10, 165);
+  margin: 0.4rem;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.button button:hover {
+  background: rgb(38, 1, 73);
+}
+h2 {
+  padding: 0.7rem 1.2rem;
+  background-color: rgb(102, 133, 57);
+  border-radius: 50%;
+}
+.scoreCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fonth3 {
+  font-size: 3rem;
+  padding: 1rem 3rem;
+  background-color: rgb(20, 167, 7);
+  border-radius: 5px;
+}
+.flexBox {
+  margin-bottom: 1rem;
+}
+@media (max-width: 630px) {
+  .flexBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .resultbox {
+    display: flex;
+  }
+  .button {
+    display: flex;
+  }
+}
+@media (max-width: 580px) {
+  .fonth3 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    padding: 0.8rem 2rem;
+  }
+}
+@media (max-width: 386px) {
+  .fonth3 {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.3rem;
+  }
+  .button {
+    font-size: 1rem;
+  }
+}

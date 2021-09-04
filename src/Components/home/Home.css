@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Pirata+One|Rubik:900");
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  border: 1px solid gainsboro;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: white;
+}
+.box h1 {
+  font-size: 5rem;
+  font-weight: 1000;
+  letter-spacing: 0.5rem;
+  word-spacing: 0.8rem;
+  text-shadow: -4px 6px 2px rgb(31, 1, 70), 6px 6px 2px rgb(31, 1, 70),
+    6px -4px 2px rgb(31, 1, 70), -4px -4px 2px rgb(31, 1, 70);
+}
+.box button {
+  padding: 0.8rem 2.5rem;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: rgb(67, 0, 129);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+.box button:hover {
+  background: rgb(38, 1, 73);
+}
+.screenHeight {
+  height: 90vh;
+}
+
+@media (max-width: 798px) {
+  .box {
+    padding: 1rem;
+  }
+}
+@media (max-width: 716px) {
+  .box h1 {
+    font-size: 3rem;
+    text-shadow: -2px 3px 1px rgb(31, 1, 70), 3px 3px 1px rgb(31, 1, 70),
+      3px -1px 1px rgb(31, 1, 70), -2px -2px 1px rgb(31, 1, 70);
+  }
+  .box button {
+    padding: 0.4rem 1.5rem;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .box h1 {
+    font-size: 2rem;
+    text-shadow: -1px 2px 0 rgb(31, 1, 70), 2px 2px 0 rgb(31, 1, 70),
+      2px -1px 0 rgb(31, 1, 70), -1px -1px 0 rgb(31, 1, 70);
+    letter-spacing: 0.2rem;
+    word-spacing: 0.4rem;
+  }
+  .box button {
+    padding: 0.4rem 1.2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
