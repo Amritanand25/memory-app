@@ -106,10 +106,6 @@ const GameBoard = (props) => {
     props.randomData(arrVal.sort(() => Math.random() - 0.5));
   };
 
-  useEffect(() => {
-    random();
-  }, [props.isPlay]);
-
 
   useEffect(() => {
     let flag = false;
@@ -148,7 +144,6 @@ const GameBoard = (props) => {
         match={match}
         turn={turn}
         isPlay={props.isPlay}
-        winner={winner}
       />
     </div>
   );

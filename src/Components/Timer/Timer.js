@@ -19,7 +19,7 @@ const Timer = (props) => {
             }
         }, 1000);
          
-    }, [sec]);
+    }, [sec, min]);
 
     useEffect(() => {
 
