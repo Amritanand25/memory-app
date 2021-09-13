@@ -9,6 +9,7 @@ const Index = (props) => {
 
   const playGameHandler = () => {
     setPlayGame(true);
+    //exit
   };
 
   const playGameHandlerExit = () => {
@@ -25,7 +26,7 @@ const Index = (props) => {
         <Home random={randomize} playGameHandler={playGameHandler} />
       )}
       {playGame && (
-        <GameBoard randomData={randomData} playgame={playGameHandlerExit} />
+        <GameBoard randomData={randomData} isPlay={playGame} playgame={playGameHandlerExit} />
       )}
     </div>
   );

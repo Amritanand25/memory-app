@@ -1,0 +1,12 @@
+.timer{
+    background-color: grey;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0.4rem;
+    width: auto;
+    padding: 1rem 2rem;
+}
+
+

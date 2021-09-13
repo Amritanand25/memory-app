@@ -1,11 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./GameBoard.css";
 import ScoreBoard from "./ScoreBoard.js";
+
+
 let arr = [
-  "A", "A", "B", "B",
-  "C", "C", "D", "D",
-  "E", "E", "F", "F",
-  "G", "G", "H", "H",
+  "A", "H", "B", "D",
+  "C", "F", "C", "B",
+  "E", "D", "F", "G",
+  "G", "E", "H", "A",
 ];
 
 let bool = [
@@ -14,19 +16,23 @@ let bool = [
   false, false, false, false,
   false, false, false, false,
 ];
+
 const disab = [
   false, false, false, false,
   false, false, false, false,
   false, false, false, false,
   false, false, false, false,
 ];
+
 const classes = [
   "smallbox", "smallbox", "smallbox", "smallbox",
   "smallbox", "smallbox", "smallbox", "smallbox",
   "smallbox", "smallbox", "smallbox", "smallbox",
   "smallbox", "smallbox", "smallbox", "smallbox",
 ];
+
 const GameBoard = (props) => {
+
   const [isVisible, setIsVisible] = useState(bool);
   const prevRef = useRef();
   const [winner, setWinner] = useState(false);
@@ -80,6 +86,7 @@ const GameBoard = (props) => {
       }
     }
   };
+
   useEffect(() => {
     prevRef.current = count;
   });
@@ -98,6 +105,11 @@ const GameBoard = (props) => {
     setArrVal(arrVal.sort(() => Math.random() - 0.5));
     props.randomData(arrVal.sort(() => Math.random() - 0.5));
   };
+
+  useEffect(() => {
+    random();
+  }, [props.isPlay]);
+
 
   useEffect(() => {
     let flag = false;
@@ -135,6 +147,8 @@ const GameBoard = (props) => {
         onExit={props.playgame}
         match={match}
         turn={turn}
+        isPlay={props.isPlay}
+        winner={winner}
       />
     </div>
   );
